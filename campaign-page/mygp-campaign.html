@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    </head>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        .col-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container-fluid {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+          
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-area-1 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 16px;
+            text-align: center;
+            color: #19AAF8;
+            padding-top: 20px;
+            padding-bottom: 8px;
+        }
+
+        .navbar {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-right: 16px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;           
+        }
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 13px;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+        }
+
+        .downloan-button {
+            border-radius: .5rem!important; 
+            background-color: #19AAF8; 
+            color: #fff; 
+            box-shadow: 1px 1px 2px #848484; 
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .purchase-button {
+            color: #19AAF8!important; 
+            border-radius: .5rem!important; 
+            background-color: #FFF; 
+            font-size: 16px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: 500;
+            text-decoration: none;
+            border-color: #19AAF8;
+        }
+
+        .balance-button {
+            border-radius: .5rem!important; 
+            background-color: #19AAF8; 
+            color: #fff; 
+            box-shadow: 1px 1px 2px #848484; 
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #19AAF8;
+            border-color: #19AAF8;           
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #19AAF8;
+            border-color: #19AAF8
+        }
+
+        .btn-primary.focus, .btn-primary:focus {
+            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+        }
+
+        .shadow-sm {
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        }
+
+        .internet-offer-section {          
+            width: 100%;
+            font-style: normal;
+            font-weight: normal;
+            color: #FFF;
+            margin-top: 10px;
+            padding-top: 16px;
+            padding-bottom: -3px;
+            background: #19AAF8;
+        }
+
+        .balance-check-section {          
+           width: 100%;
+           font-style: normal;
+           font-weight: normal;
+           color: #19AAF8;
+           margin-top: 10px;
+           padding-top: 16px;
+           padding-bottom: -3px;
+           background: #fff;
+       }
+    
+    </style>
+
+    <body class="container-fluid">
+        
+        <nav class="navbar shadow-sm">
+            <img src="logo.png" alt="GP-logo" class="img-fluid" height="50" width="50" style="padding-left:8px; padding-top:8px; padding-bottom:8px;">
+            <button class= "btn btn-primary downloan-button" type="button"><a href="">App ডাউনলোড করুন</a></button>
+        </nav>
+
+        <div class="text-area-1">
+                এক App -এই সকল GP সার্ভিস
+        </div>
+
+        <div class="internet-offer-section" >
+            <div class="row">
+                <div class="col-6">
+                        <img src="offer-image.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6" style="padding-top: 6px;">
+                    <div>
+                        ইন্টারনেট অফার 
+                    </div>
+                    <div style="font-size: 10px; padding-top: 6px;">
+                            MyGP থেকে সহজেই কিনুন  আপনার পছন্দের  ইন্টারনেট অফার 
+                    </div>
+                    <button class= "btn  purchase-button" type="button" style="margin-top: 6px;"><a style="font-size:16px;color:#19AAF8" href="">কিনুন ></a></button>
+                    <div>
+                        <span style="font-size: 50px;">১০</span>
+                        <span style="font-size: 25px;">%</span> 
+                        <span style="font-size: 10px;">বোনাস !</span>      
+                    </div>
+                    
+                    <div style="font-size: 10px;">
+                            শুধুমাত্র MyGP থেকে আপনার পসন্দের ইন্টারনেট প্যাক কিনলেই পাবেন ১০% বোনাস !
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="balance-check-section" >
+            <div class="row">
+                
+                <div class="col-6">
+                    <div style="font-size: 20px; padding-top: 6px;">
+                            ব্যালেন্স চেক 
+                    </div>
+                    
+                    <div style="font-size: 12px; padding-top: 14px;">
+                            একাউন্ট বা ইন্টারনেট ব্যালেন্স সহ সকল ব্যালেন্স চেক করুন সহজেই !  
+                    </div>
+                    <button class= "btn btn-primary balance-button" style="margin-top: 22px;" type="button"><a style="font-size:16px;" href="">চেক করুন ></a></button>
+
+                </div>
+                <div class="col-6">
+                        <img src="offer-image.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="internet-offer-section" >
+            <div class="row">
+                <div class="col-6">
+                        <img src="flexiplan.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <div style="font-size: 20px; padding-top: 12px;">
+                            ফ্লেক্সিপ্লান
+                    </div>
+                    <div style="font-size: 12px; padding-top: 20px;">
+                            প্রয়োজন মত নিজেই তৈরী করুন আপনার পছন্দের অফার  MyGP ফ্লেক্সিপ্লান থেকে !
+                    </div>
+                    
+                    <button class= "btn purchase-button" type="button" style="margin-top: 26px;"><a style="font-size:16px;color:#19AAF8" href="">তৈরী করুন ></a></button>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="balance-check-section text-center" >
+            <div style="font-size: 18px; ">
+                    এই App -টি ব্যবহার করা অনেক সহজ
+            </div>
+            <div style="font-size: 18px;">
+                    এবং
+            </div>
+            <div style="font-size: 18px; padding-left: 16px; padding-right: 16px;">
+                    এই App থেকে অনেক বোনাস ও ডিসকাউন্টস পাওয়া যায়
+            </div>
+            <img src="app-feature.png" alt="" class="img-fluid" style="padding: 16px;">               
+        </div>
+    </body>
+</html>
