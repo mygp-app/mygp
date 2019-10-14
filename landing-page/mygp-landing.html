@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        .col-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+           
+        .blue-color {  
+            height: 85px;
+            margin: 0;
+            padding:0;
+            background: #FFFFFF;
+        }
+        
+        .container-fluid {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mid-body-1 {
+            padding-top: 18px;
+        }
+        
+        .mid-body-2 {
+            margin-top: 10px;
+            background: #F8F8F8;
+            padding-bottom: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .mid-body-3 {
+            padding-bottom: 6px;
+        
+        }
+
+        .mid-body-4 {
+            margin-top: 10px;
+            background: #F8F8F8;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .text-area-1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000;
+            padding-top: 12px;
+        }
+        
+        .text-area-2 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000;
+            padding-top: 8px;
+        }
+        
+        .text-area-3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            padding-top: 8px;   
+        }   
+        
+        .text-area-4 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000;
+            padding-top: 8px;
+        }
+        
+        .text-area-5 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            color: #000000;
+            padding-top: 60px;    
+            line-height: 16px;
+            display:contents;
+        }  
+
+        .text-area-6 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: #000000;
+            padding-top: 8px;
+        }
+
+        
+        .text-center {
+            text-align: center !important;
+        }
+
+        .navbar {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-right: 16px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;           
+        }
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 14px;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+        }
+
+        .dl-button{
+            border-radius: .5rem!important; 
+            background-color: #19AAF8; 
+            color: #fff; 
+            box-shadow: 1px 1px 2px #848484; 
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #19AAF8;
+            border-color: #19AAF8;
+            
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #19AAF8;
+            border-color: #19AAF8
+        }
+
+        .btn-primary.focus, .btn-primary:focus {
+            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+        }
+
+        .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        }    
+    </style>
+
+    <body class="container-fluid">
+        
+        <nav class="navbar shadow-sm">
+            <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/logo.png" alt="GP-logo" class="img-fluid" height="50" width="50" style="padding-left:8px; padding-top:8px; padding-bottom:8px;">
+            <button class= "btn btn-primary dl-button" type="button"><a href="https://mygp.li/Dahsboard">App ডাউনলোড করুন</a></button>
+        </nav>
+
+        <div class="text-area-1">
+            MyGP App না থাকার করনে আপনি এই Page টি দেখছেন
+        </div>
+        <div class="text-area-1">
+            MyGP App থাকলে যে সুবিধাগুলো পেতেন
+        </div>
+
+        <div class="mid-body-1">
+            <div class="row">
+                <div class="col-6 text-center">
+                        <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/my-offer-1.png" alt="my-offer-image" class="img-fluid" style="padding-left:12px;">                           
+                </div>
+                <div class="col-6 text-center">
+                        <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/my-offer-2.png" alt="my-offer-image" class="img-fluid" style="padding-right:12px;">                                                     
+                </div>
+            </div>
+            <div class="row text-area-2">
+                <div class="col-6" >
+                    <span style="padding-left:12px;">My Offer শাখায় থাকে আপনার জন্য Special Offer</span>                                                              
+                </div>
+                <div class="col-6">
+                    <span style="padding-right:12px;">My Offer -এ আপনি পাবেন কম টাকায় বেশি MB & Minutes</span>                                                            
+                </div>
+            </div>
+        </div>    
+
+        <div class="mid-body-2">
+            <div class="text-area-3">
+                <span>MyGP App যেভাবে পাবেন</span>                    
+            </div>
+
+            <div class="text-area-4">
+                <span>Play Store অথবা App Store থেকে</span>                    
+            </div>
+
+            <div class="text-center">
+                <span><a href="https://play.google.com/store/apps/details?id=com.portonics.mygp"><img src="https://cdn01.grameenphone.com/sites/default/files/pictures/play-store_0.png" width="150" alt="play-store" class="img-fluid" style=" padding: 10px;"></a></span>
+                <span><a href="https://apps.apple.com/us/app/mygp-bangladesh/id1128691313"><img src="https://cdn01.grameenphone.com/sites/default/files/pictures/app-store.png" width="140" alt="app-store" class="img-fluid" style=" padding: 10px;"></a></span>                   
+            </div>
+
+            <div class="text-area-4">
+                <span>আপনি ফ্রী Download ও করতে পারেন</span>                    
+            </div>
+
+            <div class="text-center">
+                <span><a href="http://grameenphone.portal.ncnd.mobi/ncnd/banners/mygp_060519.apk"><img src="https://cdn01.grameenphone.com/sites/default/files/pictures/direct-download.png" width="150" alt="free-download" class="img-fluid" style="padding: 10px;"></a></span>               
+            </div>
+        </div>
+
+
+        <div class="mid-body-3">
+            <div class="text-area-3">
+                <span>যেভাবে ফ্রী Download করবেন</span>    
+            </div>
+
+            <div class="row" style="padding-top: 12px;">
+                <div class="col-6 text-center">
+                        <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/free-dowload-1.png" alt="my-offer-image" class="img-fluid" style="padding-left:12px;">                           
+                </div>
+                <div class="col-6" style="padding-top: 50px;">
+                        <span class="col-6 text-area-5 float-left">আপনি যেহেতু Play Store থেকে Download করছেন না, তাই আপনার ফোনে একটা Download Alert দিবে </span>                                                    
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 12px;">
+                <div class="col-6 text-center">
+                        <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/free-download-2.png" alt="my-offer-image" class="img-fluid" style="padding-left:12px;">                           
+                </div>
+                <div class="col-6" style="padding-top: 50px;">
+                        <span class="col-6 text-area-5 float-left">Download করার পর .apk ফাইলটি ক্লিক করে Install এ ক্লিক করুন</span>                                                    
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 12px;">
+                <div class="col-6 text-center" >
+                        <img src="https://cdn01.grameenphone.com/sites/default/files/pictures/free-download-3.png" alt="my-offer-image" class="img-fluid" style="padding-left:12px;">                           
+                </div>
+                <div class="col-6" style="padding-top: 50px;">
+                        <span class="col-6 text-area-5 float-left" style="padding-top: 50px;">Install করার সময় Alert দিলে Continue -এ ক্লিক করুন এবং Install শেষে Open -এ ক্লিক করে উপভোগ করুন MyGP </span>                                                    
+                </div>
+            </div>    
+        </div>   
+
+        <div class="mid-body-4"> 
+            <div class="text-area-6">
+                Google Play and the Google Play logo are trademarks of Google LLC
+            </div>
+            <div class="text-area-6">
+                Apple, the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc
+            </div>            
+        </div>
+ 
+    </body>
+</html>
+
